@@ -1,0 +1,309 @@
+{
+    "data": {
+        "BTC": {
+            "circulating_supply": 18520937,
+            "cmc_rank": 1,
+            "date_added": "2013-04-28T00:00:00.000Z",
+            "id": 1,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": 21000000,
+            "name": "Bitcoin",
+            "num_market_pairs": 9584,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 1347377118664.6482,
+                    "percent_change_1h": 0.08246131,
+                    "percent_change_24h": 0.14655205,
+                    "percent_change_7d": -0.63500424,
+                    "price": 72748.86355180887,
+                    "volume_24h": 114222129441.78348
+                }
+            },
+            "slug": "bitcoin",
+            "symbol": "BTC",
+            "tags": [
+                "mineable",
+                "pow",
+                "sha-256",
+                "store-of-value",
+                "state-channels"
+            ],
+            "total_supply": 18520937
+        },
+        "FRC": {
+            "circulating_supply": 56810797.17788203,
+            "cmc_rank": 1785,
+            "date_added": "2013-05-03T00:00:00.000Z",
+            "id": 10,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": null,
+            "name": "Freicoin",
+            "num_market_pairs": 1,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 1653270.8344432078,
+                    "percent_change_1h": 0.08657165,
+                    "percent_change_24h": -54.98752404,
+                    "percent_change_7d": 4.60121504,
+                    "price": 0.029101348978902743,
+                    "volume_24h": 93.90373363951637
+                }
+            },
+            "slug": "freicoin",
+            "symbol": "FRC",
+            "tags": [
+                "mineable",
+                "pow",
+                "sha-256"
+            ],
+            "total_supply": 100000000
+        },
+        "FTC": {
+            "circulating_supply": 295033080,
+            "cmc_rank": 1008,
+            "date_added": "2013-05-03T00:00:00.000Z",
+            "id": 8,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": 336000000,
+            "name": "Feathercoin",
+            "num_market_pairs": 13,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 12395731.485523311,
+                    "percent_change_1h": -5.82487886,
+                    "percent_change_24h": -5.47604442,
+                    "percent_change_7d": -8.13634509,
+                    "price": 0.04201471741922401,
+                    "volume_24h": 44959.914196703474
+                }
+            },
+            "slug": "feathercoin",
+            "symbol": "FTC",
+            "tags": [
+                "mineable",
+                "pow",
+                "neoscrypt",
+                "medium-of-exchange",
+                "payments"
+            ],
+            "total_supply": 295033080
+        },
+        "ICX": {
+            "circulating_supply": 570168854.9734923,
+            "cmc_rank": 60,
+            "date_added": "2017-10-27T00:00:00.000Z",
+            "id": 2099,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:24.000Z",
+            "max_supply": null,
+            "name": "ICON",
+            "num_market_pairs": 64,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 1393486977.9372084,
+                    "percent_change_1h": -0.2236483,
+                    "percent_change_24h": -0.33522658,
+                    "percent_change_7d": -4.04084553,
+                    "price": 2.4439899966159904,
+                    "volume_24h": 55632732.07363342
+                }
+            },
+            "slug": "icon",
+            "symbol": "ICX",
+            "tags": [
+                "platform",
+                "enterprise-solutions",
+                "interoperability"
+            ],
+            "total_supply": 800460000
+        },
+        "LTC": {
+            "circulating_supply": 65696465.29447592,
+            "cmc_rank": 10,
+            "date_added": "2013-04-28T00:00:00.000Z",
+            "id": 2,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": 84000000,
+            "name": "Litecoin",
+            "num_market_pairs": 693,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 19822678164.53543,
+                    "percent_change_1h": -0.11679617,
+                    "percent_change_24h": 0.21241186,
+                    "percent_change_7d": -7.2333738,
+                    "price": 301.73127390770316,
+                    "volume_24h": 17224000567.42739
+                }
+            },
+            "slug": "litecoin",
+            "symbol": "LTC",
+            "tags": [
+                "mineable",
+                "pow",
+                "scrypt",
+                "medium-of-exchange",
+                "binance-chain"
+            ],
+            "total_supply": 65696465.29447592
+        },
+        "NMC": {
+            "circulating_supply": 14736400,
+            "cmc_rank": 649,
+            "date_added": "2013-04-28T00:00:00.000Z",
+            "id": 3,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": null,
+            "name": "Namecoin",
+            "num_market_pairs": 6,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 38384342.13229787,
+                    "percent_change_1h": -3.90747304,
+                    "percent_change_24h": 0.6443798,
+                    "percent_change_7d": -2.2591315,
+                    "price": 2.6047299294466675,
+                    "volume_24h": 2898.758417909053
+                }
+            },
+            "slug": "namecoin",
+            "symbol": "NMC",
+            "tags": [
+                "mineable",
+                "pow",
+                "sha-256",
+                "platform"
+            ],
+            "total_supply": 14736400
+        },
+        "NVC": {
+            "circulating_supply": 2335756.713897,
+            "cmc_rank": 1570,
+            "date_added": "2013-04-28T00:00:00.000Z",
+            "id": 6,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": null,
+            "name": "Novacoin",
+            "num_market_pairs": 2,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 2785221.179919339,
+                    "percent_change_1h": -79.49988866,
+                    "percent_change_24h": -0.39419173,
+                    "percent_change_7d": -0.56820461,
+                    "price": 1.1924277744116798,
+                    "volume_24h": 6731.216054377014
+                }
+            },
+            "slug": "novacoin",
+            "symbol": "NVC",
+            "tags": [
+                "mineable",
+                "hybrid-pow-pos",
+                "scrypt"
+            ],
+            "total_supply": 2335756.713897
+        },
+        "PPC": {
+            "circulating_supply": 26559129.63335335,
+            "cmc_rank": 666,
+            "date_added": "2013-04-28T00:00:00.000Z",
+            "id": 5,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": null,
+            "name": "Peercoin",
+            "num_market_pairs": 19,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 36142448.707269266,
+                    "percent_change_1h": -1.77382889,
+                    "percent_change_24h": -0.97952664,
+                    "percent_change_7d": -2.14698886,
+                    "price": 1.3608295605395535,
+                    "volume_24h": 123743.80523469442
+                }
+            },
+            "slug": "peercoin",
+            "symbol": "PPC",
+            "tags": [
+                "mineable",
+                "hybrid-pow-pos",
+                "sha-256",
+                "medium-of-exchange",
+                "payments"
+            ],
+            "total_supply": 26559129.63335335
+        },
+        "TRC": {
+            "circulating_supply": 22935396.43036118,
+            "cmc_rank": 1145,
+            "date_added": "2013-04-28T00:00:00.000Z",
+            "id": 4,
+            "is_active": 1,
+            "is_fiat": 0,
+            "last_updated": "2020-10-18T22:21:23.000Z",
+            "max_supply": 42000000,
+            "name": "Terracoin",
+            "num_market_pairs": 2,
+            "platform": null,
+            "quote": {
+                "DKK": {
+                    "last_updated": "2020-10-18T22:21:32.000Z",
+                    "market_cap": 8629949.712076377,
+                    "percent_change_1h": 0.09240148,
+                    "percent_change_24h": -2.12627994,
+                    "percent_change_7d": -3.77860989,
+                    "price": 0.37627209707403675,
+                    "volume_24h": 1477.8222331403504
+                }
+            },
+            "slug": "terracoin",
+            "symbol": "TRC",
+            "tags": [
+                "mineable",
+                "pow",
+                "sha-256"
+            ],
+            "total_supply": 22935396.43036118
+        }
+    },
+    "status": {
+        "credit_count": 1,
+        "elapsed": 10,
+        "error_code": 0,
+        "error_message": null,
+        "notice": null,
+        "timestamp": "2020-10-18T22:22:16.810Z"
+    }
+}

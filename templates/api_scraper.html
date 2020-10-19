@@ -1,0 +1,29 @@
+{%extends "layout.html"%}
+{%block content%}
+<style>
+tr:nth-child(odd) { background-color : #EAF2D3; }
+tr:hover { background-color : #89ae37; }
+overflow-y:scroll;
+height:50px;
+display:block;
+</style>
+
+<div class="book_store_body">
+    <h1>Lets get api details from programmableweb.com</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>The data is scraped using <br>
+            <strong>BeautifulSoup</strong><br>
+            <strong>requests</strong><br>
+            <strong>pandas</strong><br>
+            We are scraping through multiple pages of the
+            website to get the details of all available APIs
+        </p>
+        <button type="submit" value="programmableweb"
+                formmethod="post">Get API Details</button>
+    </form>
+        {% for table in html_data %}
+                    {{ table|safe }}
+        {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+<style>
+tr:nth-child(odd) { background-color : #EAF2D3; }
+tr:hover { background-color : #89ae37; }
+overflow-y:scroll;
+height:50px;
+display:block;
+</style>
+
+<div class="crypto-portfolio-page">
+    <div class="crypto-portfolio">
+        <h1>Lets build your Crypto-Currency Portfolio</h1>
+        <form method="post" novalidate=True>
+            {{ form.hidden_tag() }}
+            <p>To view your portfolio, first add all your currencies and
+                the amount of each currency. Then Press view portfolio
+                button to see your portfolio. </p>
+            <p>The data is fetched using<br>
+                <strong>Coinmarketcap APIs</strong><br>
+            </p>
+            {{ form.currency_symbol.label }} {{form.currency_symbol}}
+            {% for error in form.currency_symbol.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+            <br>
+            {{ form.amount.label }} {{form.amount}}
+            {% for error in form.amount.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+            <br>
+            {{form.add_currency()}}
+            <br>
+            {{form.currencies.label}}{{form.currencies(rows=10, cols=15)}}
+            <br>
+            {{form.fetch_data()}}
+        </form>
+        {% if list_data %}
+        <table>
+            <tr>
+                <th>Symbol</th><th>Name</th><th>Price</th>
+                <th>Value</th><th>percent_change_24h</th>
+                <th>percent_change_7d</th>
+            </tr>
+            {% for record in list_data %}
+            <tr>
+                <td>{{record['Symbol']}}</td><td>{{record['Name']}}</td>
+                <td>{{record['Price']}}</td><td>{{record['Value']}}</td>
+                <td>{{record['percent_change_24h']}}</td><td>{{record['percent_change_7d']}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+    <div class="crypto-portfolio-right-column">
+        <h3>Available CryptoCyrrencies</h3>
+        {% if crypto_symbols %}
+        {% for v in crypto_symbols %}
+        <td>{{v}}</td>
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>

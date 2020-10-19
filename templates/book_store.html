@@ -1,0 +1,75 @@
+{%extends "layout.html"%}
+{%block content%}
+<style>
+tr:nth-child(odd) { background-color : #EAF2D3; }
+tr:hover { background-color : #89ae37; }
+overflow-y:scroll;
+height:50px;
+display:block;
+</style>
+
+<div class="book_store_body">
+    <h1>Book Store</h1>
+    <form method="post">
+        <label>Title</label><input name="title" value=
+            {% if book and book[0][1] %}
+                {{ book[0][1] }}
+            {% endif %}
+        >
+        <label>Author</label><input name="author" value=
+            {% if book and book[0][2]  %}
+                {{ book[0][2] }}
+            {% endif %}
+        >
+        <br>
+        <label>Year</label><input name="year" value=
+            {% if book and book[0][3] %}
+                {{ book[0][3] }}
+            {% endif %}
+        >
+        <label>ISBN</label><input name="isbn" value=
+            {% if book and book[0][4] %}
+                {{ book[0][4] }}
+            {% endif %}
+        >
+        <input id="displayed_book_id" name="displayed_book_id"
+                           type="hidden" value=
+            {% if book %}
+                {{ book[0][0] }}
+            {% endif %}
+        >
+        <br>
+        <button type="submit" name="add_new" value="add_new"
+                formmethod="post">Add New</button>
+        <button type="submit" name="search" value="search"
+                formmethod="post">Search</button>
+        <button type="submit" name="update" value="update"
+                formmethod="post">Update</button>
+        <button type="submit" name="delete" value="delete"
+                formmethod="post">Delete</button>
+        <button type="submit" name="view_all" value="view_all"
+                formmethod="post">View All</button>
+
+        <table style="width:100%">
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>ISBN</th>
+              </tr>
+             {% for book in books %}
+                <tr>
+                    <td>{% if book[1] %}{{ book[1] }} {% endif %}</td>
+                    <td>{% if book[2] %}{{ book[2] }} {% endif %}</td>
+                    <td>{% if book[3] %}{{ book[3] }} {% else %}{{ 'N/A' }}{% endif %}</td>
+                    <td>{% if book[4] %}{{ book[4] }} {% else %}{{ 'N/A' }}{% endif %}</td>
+                    <td><button type="submit" name="edit" value="{{ book[0] }}"
+                                formmethod="post" onclick="">Edit</button></td>
+                </tr>
+             {% endfor %}
+        </table>
+    </form>
+
+</div>
+<p><br><i>"Code forked from The Python Mega Course by Ardit Sulce"</i></p>
+{% endblock %}

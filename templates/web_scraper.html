@@ -1,0 +1,29 @@
+{%extends "layout.html"%}
+{%block content%}
+<style>
+tr:nth-child(odd) { background-color : #EAF2D3; }
+tr:hover { background-color : #89ae37; }
+overflow-y:scroll;
+height:50px;
+display:block;
+</style>
+
+<div class="book_store_body">
+    <h1>Lets get data from some websites</h1>
+    <form method="post">
+        <h4>Properties list Rock Springs, WY</h4>
+        <p>The data is scraped using <br>
+            <strong>BeautifulSoup</strong><br>
+            <strong>requests</strong><br>
+            <strong>pandas</strong><br>
+            From: www.pyclass.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/
+        </p>
+        <button type="submit" name="rock_spring_properties" value="rock_spring_properties"
+                formmethod="post">Rock Spring</button>
+    </form>
+        {% for table in html_data %}
+                    {{ table|safe }}
+        {% endfor %}
+</div>
+<p><br><i>"Code forked from The Python Mega Course by Ardit Sulce"</i></p>
+{% endblock %}
